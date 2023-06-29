@@ -4,13 +4,13 @@ import { createJobController, deleteJobController, getJobController, updateJobCo
 
 
 const route=express.Router()
-route.post('/create-job',createJobController)
+route.post('/createjob',createJobController)
 
-route.post('/get-job',getJobController)
+route.post('/getjob',getJobController)
 
-route.patch('/update-job/:id',updateJobController)
+route.patch('/updatejob/:id',updateJobController)
 
 
-route.delete('/delete-job/:id',deleteJobController)
+route.delete('/deletejob/:id',deleteJobController)
 
 export default route
